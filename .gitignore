@@ -192,3 +192,40 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# Add these lines to your existing .gitignore
+
+# Data files (too large for git)
+data/raw/*.csv
+data/processed/*.csv
+*.zip
+
+# Model files
+models/saved_models/*.pkl
+models/saved_models/*.joblib
+
+# Results
+results/submissions/*.csv
+results/figures/*.png
+results/figures/*.pdf
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
